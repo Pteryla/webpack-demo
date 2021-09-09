@@ -4,6 +4,21 @@ import Icon from "./icon.jpg";
 import Data from "./data/data.xml";
 import Notes from "./data/data.csv";
 
+// 自定义 JSON 模块 parser
+// https://webpack.docschina.org/configuration/module/#ruleparserparse
+import toml from "./data/data.toml";
+import yaml from "./data/data.yaml";
+import json from "./data/data.json5";
+
+console.log(toml.title); // output `TOML Example`
+console.log(toml.owner.name); // output `Tom Preston-Werner`
+
+console.log(yaml.title); // output `YAML Example`
+console.log(yaml.owner.name); // output `Tom Preston-Werner`
+
+console.log(json.title); // output `JSON5 Example`
+console.log(json.owner.name); // output `Tom Preston-Werner`
+
 function componentHello() {
   const element = document.createElement("div");
   const imageElementContainer = document.createElement("div");
