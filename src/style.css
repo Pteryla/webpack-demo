@@ -1,6 +1,29 @@
+/* 
+    woff    ->  format('woff')
+    woff2   ->  format('woff2')
+    eot     ->  不写format  |  format('embedded-opentype')
+    ttf     ->  format('truetype')
+    otf     ->  format('truetype')
+    svg     ->  format('svg') 
+*/
+
+@font-face {
+  font-family: "FiraCode";
+  src: url("./fonts/FiraCode-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "OperatorMono";
+  src: url("./fonts/OperatorMono-Bold.otf") format("truetype"),
+    url("./fonts/OperatorMono-BoldItalic.otf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
 .hello {
   font-size: 18px;
   color: #000;
+  font-family: "OperatorMono";
   background: url("./icon.jpg");
   height: 50px;
   padding: 0 10px;
