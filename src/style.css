@@ -1,3 +1,9 @@
 .hello {
-  color: red;
+  font-size: 18px;
+  color: #000;
+  background: url("./icon.jpg");
+  height: 50px;
+  padding: 0 10px;
+  line-height: 50px;
+  margin-bottom: 10px;
 }
