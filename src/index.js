@@ -1,6 +1,8 @@
 import _ from "lodash";
 import "./style.css";
 import Icon from "./icon.jpg";
+import Data from "./data/data.xml";
+import Notes from "./data/data.csv";
 
 function componentHello() {
   const element = document.createElement("div");
@@ -34,3 +36,6 @@ function componentImage() {
 
 document.body.appendChild(componentHello());
 document.body.appendChild(componentImage());
+
+console.log(Data);
+console.log(Notes);
