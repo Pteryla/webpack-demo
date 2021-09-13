@@ -9,6 +9,9 @@ module.exports = {
   },
   // 使用 source map
   devtool: "inline-source-map",
+  devServer: {
+    static: "./dist",
+  },
   plugins: [
     new HtmlWebpackPlugin({
       title: "Development",
