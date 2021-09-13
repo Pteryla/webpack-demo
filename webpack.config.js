@@ -22,6 +22,7 @@ module.exports = {
     path: path.resolve(__dirname, "dist"),
     // 清理 /dist 文件夹
     clean: true,
+    publicPath: "/",
   },
 };
 
