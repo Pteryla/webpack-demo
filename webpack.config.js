@@ -2,14 +2,16 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  mode: "production",
+  mode: "development",
   entry: {
     index: "./src/index.js",
     print: "./src/print.js",
   },
+  // 使用 source map
+  devtool: "inline-source-map",
   plugins: [
     new HtmlWebpackPlugin({
-      title: "管理输出",
+      title: "Development",
     }),
   ],
   output: {
